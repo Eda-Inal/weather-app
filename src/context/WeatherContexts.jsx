@@ -6,7 +6,7 @@ const WeatherContext = createContext();
 
 export const WeatherProvider = ({children}) => {
   const [weather, setWeather] = useState([]);
-  const [city, setCity] = useState("");
+  const [city, setCity] = useState("İzmir");
   const values = { weather, setWeather, city, setCity, cities };
 
   useEffect(() => {
